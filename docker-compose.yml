@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+
+  home-scs:
+    image: home-scs
+    build:
+      context: .
+    container_name: home-scs
+    env_file: .env
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    # expose:
+    #   - "9229"
+    # ports:
+    #   - "9229:9229"
+    entrypoint:
+      - npm
+      - run
+      - nodemon
+      # - --
+      # - --inspect
+

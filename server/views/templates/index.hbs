@@ -1,0 +1,26 @@
+<main role="main">
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="display-3">Home</h1>
+        <img src="/home/assets/images/logo.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>Items</h3>
+        <!--# block name="items_latests_stub" -->
+          <div class="alert alert-warning" role="alert">
+            <strong>Oh snap!</strong> Content not available.
+          </div>
+        <!--# endblock -->
+        <!--# include virtual="/items/{{i18n.language}}/partials/latests" stub="items_latests_stub" -->
+      </div>
+    </div>
+    <hr>
+  </div>
+</main>
