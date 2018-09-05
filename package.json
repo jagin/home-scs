@@ -3,9 +3,14 @@
   "version": "0.0.1",
   "license": "MIT",
   "description": "Home SCS",
+  "author": "Jarosław Gilewski",
   "main": "server",
   "engines": {
     "node": ">=8.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jagin/home-scs.git"
   },
   "scripts": {
     "lint": "standard",
