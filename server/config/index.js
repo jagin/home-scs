@@ -73,8 +73,9 @@ config.manifest = {
         plugin: './metrics',
         options: {
           ignorePaths: [
-            '/.well-known',
-            '/assets'
+            '/health-check',
+            '/metrics',
+            '/home/assets'
           ]
         }
       },
