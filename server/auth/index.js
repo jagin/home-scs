@@ -12,7 +12,6 @@ const validate = async (decoded, request) => {
 module.exports = {
   name: 'auth',
   register (server, options) {
-    console.log(options)
     server.auth.strategy('jwt', 'jwt', {
       key: options.jwt.key,
       verifyOptions: {
